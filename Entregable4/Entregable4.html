@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)http://127.0.0.1:5500/EJERCICIO1.html#section1 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width&gt;, initial-scale=1.0">
+    <link rel="stylesheet" href="./Entregable4_files/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="http://127.0.0.1:5500/EJERCICIO1.html#section1">Inicio</a></li>
+                <li><a href="http://127.0.0.1:5500/EJERCICIO1.html#section2">Contenido tematico</a></li>
+                <li><a href="http://127.0.0.1:5500/EJERCICIO1.html#section3">Detalles</a></li>
+               
+            </ul>
+            <!-- Botón de menú para pantallas pequeñas -->
+            <button id="nav-toggle" aria-label="Toggle navigation">
+                <img src="./Entregable4_files/rosas.jpg" width="20" height="50" alt="Menú">
+            </button>
+        </nav>
+    </header>
+    <div>
+        <br>
+        <br>
+        <section onclick="mostrarMensaje(&#39;Inicio&#39;)" id="section1">Inicio&gt; 
+            <h1>Bienvenidos a mi nuevo sitio web</h1>
+            <p>Las flores silvestres simbolizan a un espíritu libre, representa a una persona que es impredecible por su actitud aventurera, que se arriesga a tomar decisiones y que no le gusta las imposiciones ni sentirse atada, es decir, una persona que ama la libertad y no tiene miedo a salir de su zona de confort.</p>
+        </section>
+        <br>
+        <br>
+        <section onclick="mostrarMensaje(&#39;Contenido tematico&#39;)" id="section2" contenido="" tematico="">
+            <h1>Origen del simbolismo de las flores</h1>
+            <p>Las <span style="color:aquamarine">flores</span> son uno de los elementos más bellos y delicados de la naturaleza, que han inspirado a poetas, artistas y enamorados a lo largo de la historia. Pero las flores no solo son una fuente de belleza y aroma, sino también de significado y comunicación. Cada flor tiene un simbolismo propio, que depende de su tipo, su color, su forma y su origen. Conocer el simbolismo de las flores nos puede ayudar a elegir el mejor regalo para cada ocasión, o a interpretar el mensaje que nos quieren transmitir.
+
+                El origen del simbolismo de las flores se remonta a la antigüedad, cuando se usaban como ofrendas a los dioses, como adornos en las ceremonias, como medicinas o como símbolos de poder. En algunas culturas, como la egipcia, la griega o la romana, las flores tenían un valor sagrado y se asociaban a diferentes divinidades. Por ejemplo, la rosa era el símbolo de Afrodita, la diosa del amor, y el loto era el símbolo de Isis, la diosa de la vida.
+                
+                En la Edad Media, las flores se usaban como un lenguaje secreto entre los amantes, que se enviaban mensajes codificados con sus pétalos y aromas. En el Renacimiento, las flores se convirtieron en un elemento artístico, que se representaba con gran realismo y detalle en las pinturas y los tapices. En la época victoriana, el simbolismo de las flores alcanzó su máximo esplendor, y se creó un sistema complejo de floriografía, que asignaba un significado específico a cada flor, según su variedad, su color y su disposición en el ramo.
+                
+                Hoy en día, el simbolismo de las flores sigue vigente, y se utiliza para expresar sentimientos, deseos, homenajes o condolencias. Aunque el significado de las flores puede variar según la cultura y el contexto, hay algunos que son más o menos universales. </p>
+           
+        </section>
+        <br>
+        <br>
+        <section id="section3" detalles="">
+            <h1>Tipos de flores</h1>
+        <p>La rosa es la flor del amor por <span style="color: aqua">excelencia</span> pero su color determina el tipo de amor que se quiere expresar. La rosa roja simboliza el amor apasionado, la rosa blanca simboliza el amor puro, la rosa amarilla simboliza el amor platónico o la amistad, la rosa rosa simboliza el amor tierno o el agradecimiento, y la rosa negra simboliza el amor trágico o el luto.
+        </p>
+        <p>El girasol es la flor de la alegría, la buena suerte y la admiración, que se orienta hacia el sol y representa la energía y el optimismo. Regalar un girasol es una forma de decirle a alguien que le ilumina la vida, que le respeta y que le desea lo mejor</p>
+        <p>La margarita proviene del Griego y significa ¨perla¨ o ¨hermosa perla¨. Es la flor de la sencillez y la felicidad, que se relaciona con la infancia y el juego. Regalar una margarita es una forma de mostrar afecto, simpatía o inocencia por alguien </p>
+        <br>
+        <br>
+        <article>
+            <h2>Un Articulo extra</h2>
+            <p>Estos son solo algunos ejemplos del simbolismo de las flores, pero hay muchos más. Lo importante es saber que las flores son un regalo que habla por sí mismo, y que puede transmitir mucho más que palabras. Por eso, la próxima vez que quieras regalar flores, piensa bien qué quieres decir, y elige la flor adecuada para cada ocasión.</p><p>
+        </p></article>
+        </section>
+        
+    </div>
+    <script src="./Entregable4_files/script.js.descarga"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

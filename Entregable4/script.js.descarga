@@ -1,0 +1,4 @@
+function mostrarMensaje(section){
+    window.alert("Estan en "+ section)
+
+}
